@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import axios from "axios";
 import { AppContent } from "../context/AppContext";
@@ -64,7 +64,7 @@ const EmailVerify = () => {
   return (
     <div className="flex items-center justify-center min-h-screen  bg-gradient-to-br from-blue-200 to-purple-400">
       <img
-        onClick={() => Navigate("/")}
+        onClick={() => navigate("/")}
         src={assets.logo}
         alt="login page logo"
         className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
