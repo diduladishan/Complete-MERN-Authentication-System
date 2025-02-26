@@ -62,10 +62,10 @@ const EmailVerify = () => {
   }, [isLoggedin, userData]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen  bg-gradient-to-br from-blue-200 to-purple-400">
+    <div className="flex items-center justify-center min-h-screen  bg-gradient-to-br from-[#dadad8] to-[#ececea]">
       <img
         onClick={() => navigate("/")}
-        src={assets.logo}
+        src={assets.logoDark}
         alt="login page logo"
         className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
       />
@@ -74,11 +74,11 @@ const EmailVerify = () => {
         onSubmit={onSubmitHandler}
         className="bg-white p-8 rounded-lg shadow-lg w-96 text-sm"
       >
-        <h1 className="text-white text-2xl font-semibold text-center mb-4">
+        <h1 className="text-black text-2xl font-semibold text-center mb-4">
           Email Verify OTP
         </h1>
 
-        <p className="text-center mb-6 text-indigo-300">
+        <p className="text-center mb-6 text-black">
           Enter the 6-digit code sent to your email id
         </p>
 
@@ -91,7 +91,7 @@ const EmailVerify = () => {
                 maxLength="1"
                 key={index}
                 required
-                className="w-12 h-12 bg-[#333A5C] text-white text-center text-xl rounded-md"
+                className="w-12 h-12 bg-[#5fbdac] text-white text-center text-xl rounded-md"
                 ref={(e) => (inputRefs.current[index] = e)}
                 onInput={(e) => handleInput(e, index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
@@ -99,7 +99,7 @@ const EmailVerify = () => {
             ))}
         </div>
 
-        <button className="w-full py-3 bg-gradient-to-r from-indigo-500 to-indigo-900 text-white rounded-full">
+        <button className="w-full py-3 rounded-md bg-gradient-to-r from-[#149e84] to-[#179f85] text-white font-medium">
           Verify Email
         </button>
       </form>

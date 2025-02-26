@@ -81,7 +81,7 @@ const ResetPassword = () => {
     <div className="flex items-center justify-center min-h-screen  bg-gradient-to-br from-[#dadad8] to-[#ececea]">
       <img
         onClick={() => navigate("/")}
-        src={assets.logo}
+        src={assets.logoDark}
         alt="login page logo"
         className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
       />
